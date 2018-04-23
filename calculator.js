@@ -1,16 +1,18 @@
-var calcChoice;
-var choice;
-var value1;
-var value2;
-    // get the user inputs
-for(var i = 0; i < 1; i++)
-{
-  CalcInit();
+// Get the user inputs
+  var calcChoice = "";
 
-  if(calcChoice == "b");
+function CalcChoice()
+{
+  calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced") || "b";
+}
+ CalcChoice();
+//Basic Calculator
+  if(calcChoice == "b")
   {
-    CalcInput();
-  //Basic Calculator
+    var value1 = parseInt(prompt('enter first value'));
+    var value2 = parseInt(prompt('enter the second value'));
+    var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (Mo)dulus') || "a";
+
     if(choice == "a")
     {
       Addition();
@@ -36,29 +38,24 @@ for(var i = 0; i < 1; i++)
       console.log("Not a valid input.");
     }
   }
-}
+//Advanced Calculator
+  else if(calcChoice == "a")
+  {
+    var choice = prompt('Choose your action (p)ower (s)quareroot') || "a";
 
-// var calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced")
+    if(choice == "p")
+    {
+      var value3 = parseInt(prompt('enter a value'));
+      var value4 = parseInt(prompt('to the power of...'))
+      console.log(Power());
+    }
 
-// if(calcChoice == "b")
-// {
-//   var value1 = parseInt(prompt('enter first value'));
-//   var value2 = parseInt(prompt('enter the second value'));
-//   var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (Mo)dulus') || "a";
-
-
-//User Functions
-
-function CalcInit()
-{
-  var calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced") || "b"
-}
-function CalcInput()
-{
-  var value1 = parseInt(prompt('enter first value'));
-  var value2 = parseInt(prompt('enter the second value'));
-  var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (Mo)dulus') || "a";
-}
+    if(choice == "s")
+    {
+      var value3 = parseInt(prompt('enter a value'));
+      console.log(SquareRoot());
+    }
+  }
 
 //Calculator Functions
 function Modulus()
@@ -83,9 +80,9 @@ function Multiplication()
 }
 function Power()
 {
-  console.log(Math.pow(value1, value2));
+  console.log(Math.pow(value3, value4));
 }
 function SquareRoot()
 {
-  console.log(Math.sqrt(value1));
+  console.log(Math.sqrt(value3));
 }
