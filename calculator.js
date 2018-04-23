@@ -1,12 +1,9 @@
 // Get the user inputs
-  var calcChoice = "";
 
-function CalcChoice()
+
+for (var i = 1; i >= 0; i++)
 {
-  calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced") || "b";
-}
- CalcChoice();
-//Basic Calculator
+  calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced")
   if(calcChoice == "b")
   {
     var value1 = parseInt(prompt('enter first value'));
@@ -38,7 +35,7 @@ function CalcChoice()
       console.log("Not a valid input.");
     }
   }
-//Advanced Calculator
+  //Advanced Calculator
   else if(calcChoice == "a")
   {
     var choice = prompt('Choose your action (p)ower (s)quareroot') || "a";
@@ -50,12 +47,33 @@ function CalcChoice()
       console.log(Power());
     }
 
-    if(choice == "s")
+    else if(choice == "s")
     {
       var value3 = parseInt(prompt('enter a value'));
       console.log(SquareRoot());
     }
+    else
+    {
+      console.log("Not a valid input.");
+    }
   }
+  else
+  {
+    var quit = prompt("Type anything to quit");
+    if(quit)
+    {
+      break;
+    }
+    else
+    {
+      alert("Let's do math!");
+    }
+  }
+}
+//Basic Calculator
+
+
+
 
 //Calculator Functions
 function Modulus()
