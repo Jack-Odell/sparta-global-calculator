@@ -5,7 +5,8 @@ if(doMath)
 {
   for (var i = 1; i >= 0; i++)
   {
-    calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced")
+    console.log("-----");
+    calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced | (BMI)")
     if(calcChoice == "b")
     {
       var value1 = parseInt(prompt('enter first value'));
@@ -59,6 +60,13 @@ if(doMath)
         console.log("Not a valid input.");
       }
     }
+    else if(calcChoice == "bmi")
+    {
+      var weight = parseInt(prompt("What's your weight in Kilos?"));
+      var height = parseInt(prompt('How tall are you in meters?'))
+
+      console.log("Your BMI is: " + weight / (height * height) * 10000);
+    }
     else
     {
       var quit = prompt("Type anything to quit");
@@ -91,25 +99,25 @@ function Modulus()
 }
 function Addition()
 {
-  console.log(value1 + value2);
+  console.log("The sum of " + value1 + " and " + value2  + " is: " + (value1 + value2));
 }
 function Subtraction()
 {
-  console.log(value1 - value2);
+  console.log("" + value1 + " minus " + value2 + " is: " + (value1 - value2));
 }
 function Division()
 {
-  console.log(value1 / value2);
+  console.log("" + value1 + " divided by " + value2 + " is: " + (value1 / value2));
 }
 function Multiplication()
 {
-  console.log(value1 * value2);
+  console.log("" + value1 + " multiplied by " + value2 + " is: " + (value1 * value2));
 }
 function Power()
 {
-  console.log(Math.pow(value3, value4));
+  console.log(value3 + " to the power of " + value4 + " is: " + (Math.pow(value3, value4)));
 }
 function SquareRoot()
 {
-  console.log(Math.sqrt(value3));
+  console.log("The square root of " + value3 + " is: " (Math.sqrt(value3)));
 }
