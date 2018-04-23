@@ -13,6 +13,10 @@
   - Multiply one number by the `Power` of another
   - Find the `Square Root` of a number
 
+- ***BMI Calculator***
+  - Find your ***Body Mass Index*** (BMI), using your weight and height
+
+
 ## How To Use Calculator
 
 - When prompted type any key into the text window and hit `Enter`
@@ -25,4 +29,4 @@
 
 ## How To Quit
 
-On the ***Calculator Selection*** prompt, hit `Cancel`, type any key and into the text window and hit `Enter` to quit the application.
+On the ***Calculator Selection*** prompt, hit `Cancel`, type any key into the text window and hit `Enter` to quit the application.

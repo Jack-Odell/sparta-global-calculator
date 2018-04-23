@@ -62,8 +62,8 @@ if(doMath)
     }
     else if(calcChoice == "bmi")
     {
-      var weight = parseInt(prompt("What's your weight in Kilos?"));
-      var height = parseInt(prompt('How tall are you in meters?'))
+      var weight = parseInt(prompt("What's your weight in kilos?"));
+      var height = parseInt(prompt('How tall are you in centimeters?'))
 
       console.log("Your BMI is: " + weight / (height * height) * 10000);
     }
