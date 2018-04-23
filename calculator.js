@@ -1,75 +1,84 @@
 // Get the user inputs
 
-
-for (var i = 1; i >= 0; i++)
+var doMath = prompt("Type anything to do math!");
+if(doMath)
 {
-  calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced")
-  if(calcChoice == "b")
+  for (var i = 1; i >= 0; i++)
   {
-    var value1 = parseInt(prompt('enter first value'));
-    var value2 = parseInt(prompt('enter the second value'));
-    var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (Mo)dulus') || "a";
+    calcChoice = prompt("Which calculator do you want to use?  (B)asic | (A)dvanced")
+    if(calcChoice == "b")
+    {
+      var value1 = parseInt(prompt('enter first value'));
+      var value2 = parseInt(prompt('enter the second value'));
+      var choice = prompt('Choose your action (a)dd (s)ubtract (m)ultiply (d)ivide (Mo)dulus') || "a";
 
-    if(choice == "a")
-    {
-      Addition();
+      if(choice == "a")
+      {
+        Addition();
+      }
+      else if(choice == "s")
+      {
+        Subtraction();
+      }
+      else if(choice == "d")
+      {
+        Division();
+      }
+      else if(choice == "m")
+      {
+        Multiplication();
+      }
+      else if(choice == "mo")
+      {
+        Modulus();
+      }
+      else
+      {
+        console.log("Not a valid input.");
+      }
     }
-    else if(choice == "s")
+    //Advanced Calculator
+    else if(calcChoice == "a")
     {
-      Subtraction();
-    }
-    else if(choice == "d")
-    {
-      Division();
-    }
-    else if(choice == "m")
-    {
-      Multiplication();
-    }
-    else if(choice == "mo")
-    {
-      Modulus();
+      var choice = prompt('Choose your action (p)ower (s)quareroot') || "a";
+
+      if(choice == "p")
+      {
+        var value3 = parseInt(prompt('enter a value'));
+        var value4 = parseInt(prompt('to the power of...'))
+        console.log(Power());
+      }
+
+      else if(choice == "s")
+      {
+        var value3 = parseInt(prompt('enter a value'));
+        console.log(SquareRoot());
+      }
+      else
+      {
+        console.log("Not a valid input.");
+      }
     }
     else
     {
-      console.log("Not a valid input.");
-    }
-  }
-  //Advanced Calculator
-  else if(calcChoice == "a")
-  {
-    var choice = prompt('Choose your action (p)ower (s)quareroot') || "a";
-
-    if(choice == "p")
-    {
-      var value3 = parseInt(prompt('enter a value'));
-      var value4 = parseInt(prompt('to the power of...'))
-      console.log(Power());
-    }
-
-    else if(choice == "s")
-    {
-      var value3 = parseInt(prompt('enter a value'));
-      console.log(SquareRoot());
-    }
-    else
-    {
-      console.log("Not a valid input.");
-    }
-  }
-  else
-  {
-    var quit = prompt("Type anything to quit");
-    if(quit)
-    {
-      break;
-    }
-    else
-    {
-      alert("Let's do math!");
+      var quit = prompt("Type anything to quit");
+      if(quit)
+      {
+        break;
+      }
+      else
+      {
+        alert("Let's do math!");
+      }
     }
   }
 }
+else
+{
+  alert("Bye Math!");
+}
+
+
 //Basic Calculator
 
 
