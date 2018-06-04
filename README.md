@@ -1,44 +1,40 @@
-Calculator
+# Javascript Console Calculator
 
-Timings
-45 - 90 minutes
+This is a console based calculator, in order to view your results, you will need to enter the developer tools in your browser. You can do this by right clicking in the browser window and selecting `inspect`.
 
-Tasks
-Your task is to write a command line calculator application that has two settings, (b)asic and (a)dvanced.
-- First you will need to ask the user for which calculator they want to use
-- Then you will need to ask the user for the numbers to operate on.
-- Then you need to work out what to do with the numbers, depending on what operation they choose.
+A new panel will open in the browser. Navigate to the console tab to view the results.
 
-Basic:
-- Additon
-- Multiplication
-- Division
-- Subtraction
-- Modulus
+![](img/inspect.png)
 
-Advanced:
-- Power
-- Square root
+If you are unable to open the inspect panel, you will have to close the calculator first. Please see below for instructions on exiting the calculator.
 
-Setup
-There is no starter code for this app.
+## Features
 
-Hints
-Get user input - var hello = prompt("What is your name")
-Output to console - console.log(hello)
+- ***Basic Calculator*** allows you to do the following, with two numbers:
+  - Addition
+  - Subtraction
+  - Multiplication
+  - Division
 
-Bonus task - Add some additional functionality
-Add the following calculator feature into your app.
 
-BMI Calculator
-Calculate the BMI when given the height and weight - the user should be able to choose between the imperial and the metric system
-- BMI Link 1
-- BMI Link 1
+- ***Advanced Calculator*** allows you to do the following:
+  - Multiply one number by the `Power` of another
+  - Find the `Square Root` of a number
 
-SUPER Bonus task
-Add the following calculator feature into your app.
-Trip Calculator
-This feature asks the user for four inputs; distance, fuel efficiency (mpg), cost per gallon, speed and it will give you the time and price of your journey.
-Example output: "Your trip will take 3.5 hours and cost £255.33.""
-Note: For every 1 MPH over 60 MPH, reduce the the MPG by 2 MPG (i.e. a car that normally gets 30 mpg would only get 28 mpg if its speed were 61 mph. Yes this gets silly at high speed where mpg goes to zero or gets negative - how will you handle this?)
-<br>
+- ***BMI Calculator***
+  - Find your ***Body Mass Index*** (BMI), using your weight and height in kilos and centimetres.
+
+
+## How To Use Calculator
+
+- Choose which calculator you want with `a` or `b` and hit `Enter`.
+- From the selection, type in the relevant letter for the calculation you wish to do and press `enter`.
+- Follow the prompts to finish the calculation.
+
+
+
+
+
+## How To Quit
+
+On the ***Calculator Selection*** prompt, hit `Cancel`, type `n` and then `enter` to exit the calculator.
